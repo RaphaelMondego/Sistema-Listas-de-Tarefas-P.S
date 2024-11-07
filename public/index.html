@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div id="task-list"></div>
+    <button id="add-task-btn">Incluir Tarefa</button>
+
+    <!-- Popup para edição e inclusão de tarefa -->
+    <div id="task-popup" class="hidden">
+        <h2 id="popup-title">Nova Tarefa</h2>
+        <form id="task-form">
+            <label for="task-name">Nome da Tarefa:</label>
+            <input type="text" id="task-name" required>
+            
+            <label for="task-cost">Custo (R$):</label>
+            <input type="number" id="task-cost" required>
+            
+            <label for="task-deadline">Data Limite:</label>
+            <input type="date" id="task-deadline" required>
+            
+            <button type="submit" id="save-task-btn">Salvar</button>
+            <button type="button" id="cancel-btn">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
